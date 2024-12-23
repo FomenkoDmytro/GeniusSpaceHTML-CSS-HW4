@@ -1,0 +1,11 @@
+.text-primary-blue-light {
+  color: var(--color-primary-blue-light);
+}
+
+.text-bold {
+  font-weight: 700;
+
+  @media screen and (min-width: $bp-desktop) {
+    font-weight: 600;
+  }
+}

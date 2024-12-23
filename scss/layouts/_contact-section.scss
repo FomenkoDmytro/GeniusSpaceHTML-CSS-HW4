@@ -1,0 +1,66 @@
+.contact-section {
+  padding: 20px 0 0;
+
+  @media screen and (min-width: $bp-desktop) {
+    padding: 48px 0 96px;
+  }
+
+  &__container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      flex-direction: row;
+      max-width: calc(100% - 64px * 2);
+      gap: 32px;
+    }
+  }
+
+  &__title {
+    padding-bottom: 48px;
+  }
+
+  &__map {
+    margin-left: -24px;
+    min-height: 70vh;
+    width: 100vw;
+    border: none;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-left: 0;
+      flex-basis: 60%;
+      border-radius: 32px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 40%;
+    flex-grow: 1;
+    padding: 48px 56px;
+    background-color: var(--color-primary-blue-dark);
+    border-radius: 32px;
+
+    &__title {
+      padding: 0 auto;
+      margin-bottom: 32px;
+      color: var(--color-primary-white);
+    }
+  }
+
+  &__form-field {
+    margin-bottom: 16px;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto 8px;
+  }
+
+  &__button:hover {
+    color: var(--color-primary-white);
+  }
+}
